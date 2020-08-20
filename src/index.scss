@@ -1,0 +1,32 @@
+
+$primary_color: #1abc9c;
+$secondary_color: #2c3e50;
+
+// Overwrite browser defaults
+body {
+  margin: 0;
+}
+
+// My CSS rules
+.navbar {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  color: white;
+  background-color: $secondary_color;
+  padding: 40px;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+
+  .navbar-buttons-wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .navbar-button {
+      cursor: pointer;
+
+      :hover {
+        color: $primary_color;
+      }
+    }
+  }
+}

@@ -5,28 +5,103 @@ $secondary_color: #2c3e50;
 // Overwrite browser defaults
 body {
   margin: 0;
+  font-family: "Montserrat";
 }
 
 // My CSS rules
 .navbar {
   display: flex;
   align-items: center;
-  font-family: "Montserrat";
   color: white;
+  font-weight: 700;
   background-color: $secondary_color;
-  padding: 40px;
+  padding: 2rem 3rem;
   transition: padding-top 0.3s, padding-bottom 0.3s;
+
+  .navbar-title {
+    font-size: 28px;
+  }
 
   .navbar-buttons-wrapper {
     display: flex;
     justify-content: flex-end;
+    margin-left: auto;
 
     .navbar-button {
       cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
 
-      :hover {
+      &:hover {
         color: $primary_color;
       }
     }
+  }
+}
+
+.navbar-shrink {
+  padding: 1.5rem 3rem;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 50px 100px;
+
+  &.header-section {
+    background-color: $primary_color;
+    padding: 125px 100px;
+    color: white;
+  }
+}
+
+.header-content-wrapper {
+  display: flex;
+
+  .profile-pic {
+    border-radius: 100%;
+    width: 400px;
+    height: 400px;
+  }
+
+  .header {
+    display: block;
+    margin: auto 0;
+
+    .header-title, .subheader {
+      margin: 0 0;
+      text-align: center;
+    }
+
+    .header-title {
+      font-size: 48px;
+      font-weight: 800;
+    }
+
+    .subheader {
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}
+
+.divider-custom {
+  margin: 20px 0 25px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .divider-custom-line {
+    height: 5px;
+    width: 150px;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .star-icon {
+    height: 40px;
+    width: 40px;
+    margin: 0 20px;
   }
 }

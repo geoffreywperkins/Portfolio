@@ -1,7 +1,9 @@
+import './index.scss';
+import 'react-tippy/dist/tippy.css'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import './index.scss';
+import {Tooltip} from 'react-tippy';
 
 
 const App = () => {
@@ -43,15 +45,30 @@ const NavBar = () => {
         GEOFFREY WITHERINGTON-PERKINS
       </div>
       <div className="navbar-buttons-wrapper">
-        <div className="navbar-button">
-          PORTFOLIO
-        </div>
-        <div className="navbar-button">
-          ABOUT
-        </div>
-        <div className="navbar-button">
-          CONTACT
-        </div>
+        <Tooltip
+          title="Coming soon!"
+          position="bottom"
+        >
+          <div className="navbar-button">
+            PORTFOLIO
+          </div>
+        </Tooltip>
+        <Tooltip
+          title="Coming soon!"
+          position="bottom"
+        >
+          <div className="navbar-button">
+            ABOUT
+          </div>
+        </Tooltip>
+        <Tooltip
+          title="Coming soon!"
+          position="bottom"
+        >
+          <div className="navbar-button">
+            CONTACT
+          </div>
+        </Tooltip>
       </div>
     </nav>
   )

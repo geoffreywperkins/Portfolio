@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import classnames from 'classnames';
 import './index.scss';
 
 
@@ -7,11 +8,13 @@ const App = () => {
   return (
     <>
       <NavBar />
-      <Section>
+      <Section
+        header={true}
+      >
         <div className="header-content-wrapper">
           <img 
             src={require("./assets/profile.jpg")}
-            alt="Profile Picture"
+            alt="Profile"
             className="profile-pic"
           />
           <div className="header">
@@ -54,9 +57,9 @@ const NavBar = () => {
   )
 }
 
-const Section = ({children}) => {
+const Section = ({header=false, children}) => {
   return (
-    <div className="content-section header-section">
+    <div className={classnames('content-section', {'header-section': header})}>
       {children}
     </div>
   )

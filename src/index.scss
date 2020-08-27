@@ -18,6 +18,13 @@ body {
   padding: 2rem 3rem;
   transition: padding-top 0.3s, padding-bottom 0.3s;
 
+  // Fixing to top
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
   .navbar-title {
     font-size: 28px;
   }
@@ -51,7 +58,7 @@ body {
 
   &.header-section {
     background-color: $primary_color;
-    padding: 125px 100px;
+    padding: 215px 100px 125px 100px;
     color: white;
   }
 }

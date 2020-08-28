@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Portfolio website",
+    "repo": "https://github.com/geoffreywperkins/Portfolio",
+    "url": "https://geoffreywperkins.github.io/Portfolio/"
+  },
+  {
+    "name": "Price-converting chrome extension",
+    "repo": "https://github.com/geoffreywperkins/Chrome-Extension"
+  },
+  {
+    "name": "Job tracker web app",
+    "repo": "https://github.com/geoffreywperkins/JobTracker",
+    "url": "https://scoutt.herokuapp.com/"
+  },
+  {
+    "name": "Database management system",
+    "repo": "https://github.com/geoffreywperkins/CS-490"
+  },
+  {
+    "name": "Movie-making software",
+    "repo": "https://github.com/geoffreywperkins/CSE-335-Project-2"
+  }
+]

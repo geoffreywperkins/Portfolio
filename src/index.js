@@ -50,27 +50,17 @@ const App = () => {
 }
 
 const Card = ({name, repo, url}) => {
+  const onLinkClick = ({r, u}) => {
+    window.location.href = url ? url : repo;
+  }
+
   return (
     <div className="card">
       <img
         className="card-img hover"
         src={require(`./assets/${name.toLowerCase().split(' ').join('-')}.png`)}  // Image filenames are based on the name in projects.json
+        onClick={() => onLinkClick(repo, url)}
       />
-      <div className="card-content">
-        <h3 className="card-title">
-          {name.toUpperCase()}
-        </h3>
-        <Button
-          text="GITHUB"
-          link={repo}
-        />
-        {url && (
-          <Button
-            text="WEBSITE"
-            link={url}
-          />
-        )}
-      </div>
     </div>
   )
 }

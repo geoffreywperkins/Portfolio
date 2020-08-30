@@ -13,7 +13,7 @@ const App = () => {
     <>
       <NavBar />
       <Section
-        header
+        sectionId="header"
       >
         <div className="header-content-wrapper">
           <img 
@@ -30,7 +30,9 @@ const App = () => {
           </div>
         </div>
       </Section>
-      <Section>
+      <Section
+        sectionId="portfolio"
+      >
         <div className="content-wrapper">
           <h2 className="section-title">
             PORTFOLIO
@@ -76,11 +78,21 @@ const Card = ({name, repo, url}) => {
 }
 
 const Button = ({text, link}) => {
+  const onButtonClick = (event) => {
+    if (link.startsWith('#')) {
+      // Smooth scrolling
+      event.preventDefault();
+      const anchorTarget = document.getElementById(link.substring(1));
+      anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } // Else use default
+  }
+
   return (
     <div className="btn-wrapper">
       <a
         className="btn btn-primary"
         href={link}
+        onClick={onButtonClick}
       >
         {text}
       </a>
@@ -95,21 +107,23 @@ const NavBar = () => {
         GEOFFREY WITHERINGTON-PERKINS
       </div>
       <div className="navbar-buttons-wrapper">
+        <Button
+          text="PORTFOLIO"
+          link="#portfolio"
+        />
+        {/* <a
+          className="navbar-button"
+          href="#portfolio"
+        >
+          PORTFOLIO
+        </a> */}
         <Tooltip
           title="Coming soon!"
           position="bottom"
         >
-          <div className="navbar-button">
-            PORTFOLIO
-          </div>
-        </Tooltip>
-        <Tooltip
-          title="Coming soon!"
-          position="bottom"
-        >
-          <div className="navbar-button">
+          <a className="navbar-button">
             ABOUT
-          </div>
+          </a>
         </Tooltip>
         <Tooltip
           title="Coming soon!"
@@ -136,9 +150,14 @@ const Divider = () => {
   );
 }
 
-const Section = ({header=false, children}) => {
+const Section = ({sectionId, children}) => {
+  const isHeader = sectionId === 'header';
+
   return (
-    <div className={classnames('content-section', {'header-section': header})}>
+    <div
+      className={classnames('content-section', {'header-section': isHeader})}
+      id={sectionId}
+    >
       {children}
     </div>
   )

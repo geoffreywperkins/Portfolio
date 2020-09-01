@@ -77,20 +77,24 @@ const Card = ({name, repo, url}) => {
   )
 }
 
-const Button = ({text, link}) => {
+const Button = ({type, text, link}) => {
   const onButtonClick = (event) => {
     if (link.startsWith('#')) {
       // Smooth scrolling
       event.preventDefault();
       const anchorTarget = document.getElementById(link.substring(1));
-      anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (anchorTarget) {
+        anchorTarget.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     } // Else use default
   }
 
+  const isNavbarButton = type === 'navbar';
+
   return (
-    <div className="btn-wrapper">
+    <div className={classnames({'btn-wrapper': !isNavbarButton})}>
       <a
-        className="btn btn-primary"
+        className={classnames('btn', isNavbarButton ? 'btn-navbar' : 'btn-primary')}
         href={link}
         onClick={onButtonClick}
       >
@@ -108,6 +112,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-buttons-wrapper">
         <Button
+          type="navbar"
           text="PORTFOLIO"
           link="#portfolio"
         />
@@ -121,17 +126,21 @@ const NavBar = () => {
           title="Coming soon!"
           position="bottom"
         >
-          <a className="navbar-button">
-            ABOUT
-          </a>
+          <Button
+            type="navbar"
+            text="ABOUT"
+            link="#about"
+          />
         </Tooltip>
         <Tooltip
           title="Coming soon!"
           position="bottom"
         >
-          <div className="navbar-button">
-            CONTACT
-          </div>
+          <Button
+            type="navbar"
+            text="CONTACT"
+            link="#CONTACT"
+          />
         </Tooltip>
       </div>
     </nav>

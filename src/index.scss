@@ -60,19 +60,43 @@ body {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  padding: 75px 100px;
+  padding: 100px 100px;
   color: $secondary_color;
   background-color: $tertiary_color;
+  text-align: center;
 
-  &.header-section {
+  &.header-section, &.about-section {
     color: $tertiary_color;
     background-color: $primary_color;
+
+    .divider-custom-line {
+      background-color: $tertiary_color;
+    }
+
+    .section-text {
+      margin: 0 0;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .about-text-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      
+      .about-text {
+        font-size: 24px;
+        width: 60%;
+      }
+    }
+  }
+  
+  &.header-section {
     padding: 215px 100px 125px 100px;
   }
 
   .section-title {
     margin: 0 0;
-    text-align: center;
     font-size: 48px;
     font-weight: 800;
   }
@@ -90,17 +114,6 @@ body {
   .header {
     display: block;
     margin: auto 0;
-
-    .divider-custom-line {
-      background-color: $tertiary_color;
-    }
-
-    .subheader {
-      margin: 0 0;
-      text-align: center;
-      font-size: 20px;
-      font-weight: 300;
-    }
   }
 }
 

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.768c61df.chunk.css",
-    "main.js": "/Portfolio/static/js/main.dd9cd327.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.dd9cd327.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.9c66dfb7.chunk.css",
+    "main.js": "/Portfolio/static/js/main.c56151f1.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.c56151f1.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
     "static/css/2.e22355b1.chunk.css": "/Portfolio/static/css/2.e22355b1.chunk.css",
-    "static/js/2.702a0296.chunk.js": "/Portfolio/static/js/2.702a0296.chunk.js",
-    "static/js/2.702a0296.chunk.js.map": "/Portfolio/static/js/2.702a0296.chunk.js.map",
+    "static/js/2.5f2d4641.chunk.js": "/Portfolio/static/js/2.5f2d4641.chunk.js",
+    "static/js/2.5f2d4641.chunk.js.map": "/Portfolio/static/js/2.5f2d4641.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.04ce385b30c36057b7ffb700285d12e8.js": "/Portfolio/precache-manifest.04ce385b30c36057b7ffb700285d12e8.js",
+    "precache-manifest.9ff9d749e4a69cb1e9d7b83c90317565.js": "/Portfolio/precache-manifest.9ff9d749e4a69cb1e9d7b83c90317565.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.e22355b1.chunk.css.map": "/Portfolio/static/css/2.e22355b1.chunk.css.map",
-    "static/css/main.768c61df.chunk.css.map": "/Portfolio/static/css/main.768c61df.chunk.css.map",
-    "static/js/2.702a0296.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.702a0296.chunk.js.LICENSE.txt",
+    "static/css/main.9c66dfb7.chunk.css.map": "/Portfolio/static/css/main.9c66dfb7.chunk.css.map",
+    "static/js/2.5f2d4641.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.5f2d4641.chunk.js.LICENSE.txt",
     "static/media/database-management-system.png": "/Portfolio/static/media/database-management-system.816b661a.png",
     "static/media/job-tracker-web-app.png": "/Portfolio/static/media/job-tracker-web-app.ffd17e8c.png",
     "static/media/movie-making-software.png": "/Portfolio/static/media/movie-making-software.f0468663.png",
@@ -24,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.e440ee5a.js",
     "static/css/2.e22355b1.chunk.css",
-    "static/js/2.702a0296.chunk.js",
-    "static/css/main.768c61df.chunk.css",
-    "static/js/main.dd9cd327.chunk.js"
+    "static/js/2.5f2d4641.chunk.js",
+    "static/css/main.9c66dfb7.chunk.css",
+    "static/js/main.c56151f1.chunk.js"
   ]
 }

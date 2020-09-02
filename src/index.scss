@@ -95,6 +95,52 @@ body {
     padding: 215px 100px 125px 100px;
   }
 
+  &.contact-section {
+    padding: 70px 100px;
+
+    .contact-info-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+
+      .contact-info-col {
+        margin: 0 50px;
+        height: 100%;
+        width: 400px;
+        display: inline-block;
+  
+        .contact-title {
+          margin: 0 0 20px 0;
+          font-size: 32px;
+          font-weight: 700;
+        }
+  
+        .circle-btn-row {
+          display: flex;
+          justify-content: center;
+  
+          .circle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 40px;
+            margin: 0 10px;
+            padding: 7px;
+            border-radius: 100%;
+            border: solid 2px $secondary_color;
+            text-decoration: none;
+            color: $secondary_color;
+  
+            svg {
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .section-title {
     margin: 0 0;
     font-size: 48px;

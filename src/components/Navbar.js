@@ -19,16 +19,11 @@ const NavBar = () => {
           text="ABOUT"
           link="#about"
         />
-        <Tooltip
-          title="Coming soon!"
-          position="bottom"
-        >
-          <Button
-            type="navbar"
-            text="CONTACT"
-            link="#CONTACT"
-          />
-        </Tooltip>
+        <Button
+          type="navbar"
+          text="CONTACT"
+          link="#contact"
+        />
       </div>
     </nav>
   )
